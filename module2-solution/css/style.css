@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+body {
+    font-size: 16px; /* Base font size for dummy text */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.75em; /* 75% larger than base font size */
+}
+
+.row {
+    width: 100%;
+}
+
+section {
+    background-color: #f0f0f0; /* Default background color for sections */
+    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    position: relative; /* For positioning the section title */
+    padding-top: 40px; /* Space for the section title */
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    padding: 5px 15px;
+    font-size: 1.25em; /* 25% larger than base font size */
+    font-weight: bold;
+}
+
+#chicken-title {
+    background-color: #ffc0cb; /* Light pink for Chicken */
+}
+
+#beef-title {
+    background-color: #dc3545; /* Red for Beef */
+    color: white;
+}
+
+#sushi-title {
+    background-color: #ffc107; /* Yellow for Sushi */
+}
+
+section p {
+    padding: 10px;
+    color: #333;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
+    /* Ensure the third item (Sushi) is cleared correctly */
+    #sushi-section {
+        clear: both;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
